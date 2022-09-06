@@ -36,4 +36,7 @@ query:
   # firmware_id : ?FID  
   encoder_count : ?C
   encoder_speed : ?S
-  dig_in : ?D
+  # DigIn in 10 bit but sent as decimal. 8 pins.
+  # DigOut in 10 but but sent as decimal. 8 pins.
+  dig_in : ?D 1
+  dig_out : ?Do

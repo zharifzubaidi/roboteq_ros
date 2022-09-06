@@ -21,7 +21,8 @@ The roboteq driver is designed to be dynamic and users can publish the controlle
 **Credit**
 Full credit to Roboteq for creating this driver and Doan Nguyen for major improvement that he did for the driver. It was really helpful and I can't thank him enough for the amazing contribution. Thank you Doan Nguyen.
 
-**Note from Zharif**
+**Note from Zharif:**
+
 This repository is a modified version of Doan's where I used it for a Roboteq SBL2360T driver with a differential mobile robot configuration. I just changed some configuration, parameters and will provide extra walkthrough for newcomers (and future me) to understand the driver. Additional notes will be added from time to time especially guides and further explaination on the queries and how to use the driver. 
 
 # Installation Guide

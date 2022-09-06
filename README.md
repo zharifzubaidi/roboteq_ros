@@ -3,12 +3,11 @@
 # Introduction
 
 **Note from Roboteq**
-```
- -This ROS driver only supports firmware version 2.0 or 2.0+. 
- -You can check your firmware version from Roborun+ console tab by querying - "?fid". 
- -If firmware is not the latest one then please update it with the latest one available on Roboteq website 
+- This ROS driver only supports firmware version 2.0 or 2.0+. 
+- You can check your firmware version from Roborun+ console tab by querying - "?fid". 
+- If firmware is not the latest one then please update it with the latest one available on Roboteq website 
   or contact "techsupport.roboteq@mail.nidec.com".
-```
+
 This repository contains the ROS driver for Roboteq controllers. The package requires ROS system to be installed properly to your system  and proper connection of Roboteq controller. For detailed controller setup instructions, please refer to our documentation.
 
 The roboteq driver is designed to be dynamic and users can publish the controller queries as per their requirements. The publishing queries is not limited to any value. By default total 9 queries are published by launching this driver. Users can change or add queries in configuration file. For that go to config/query.yaml

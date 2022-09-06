@@ -4,7 +4,7 @@
 
 **Note from Zharif:**
 
-This repository is a modified version of Doan's where I used it for a Roboteq SBL2360T driver with a differential mobile robot configuration. I just changed some configuration, parameters and will provide extra walkthrough for newcomers (and future me) to understand the driver. Additional notes will be added from time to time especially guides and further explaination on the queries and how to use the driver. 
+This repository is a modified version of Doan's where I used it for a Roboteq SBL2360T driver with a differential mobile robot configuration. I just changed some configuration, parameters and will provide extra walkthrough for newcomers (and future me) to understand the driver. Additional notes will be added from time to time especially guides and explainations on how to use the driver. 
 
 **Credit:**
 

@@ -12,6 +12,7 @@ max_rpm: 3000 # [rpm]
 encoder_resolution: 1024
 
 # For querying data from the motor controller
+# testing
 frequency: 50   #higher frequency (value is in ms)
 query:
   motor_amps : ?A

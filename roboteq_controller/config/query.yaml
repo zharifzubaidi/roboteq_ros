@@ -19,7 +19,6 @@ query:
   hall_count : ?Cb
   hall_speed : ?BS
   volts : ?V
-  # feedback : ?F
   battery_amps : ?BA
   # power : ?P          
   fault_flag : ?FF

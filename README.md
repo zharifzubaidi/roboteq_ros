@@ -13,22 +13,16 @@ This repository contains the ROS driver for Roboteq controllers. The package req
 
 The roboteq driver is designed to be dynamic and users can publish the controller queries as per their requirements. The publishing queries is not limited to any value. By default total 9 queries are published by launching this driver. Users can change or add queries in configuration file. For that go to config/query.yaml
 
-**End Roboteq**
-
 **Note from Doan Nguyen:**
 - It originally worked at a fixed rate of 5 Hz while querying system's states. I did **major** mofifications in this work, making it work at a frequency you want to.
 - They did also specified 3 separate query frequencies in [the config file](config/query.yaml): `frequencyH`, `frequencyL`, and `frequencyG`. However, it's not the case (or quite complicated). Here in this work, I cleaned all of it and only keep a default `frequency` for all queries. It's sufficient for me, and hopefully for you too.
-- I only used the `driver.launch` for now. So `diff_odom` is kept as original. Later, I might make it works, but probably by modifying the `roboteq_controller_node`, not putting in a separated file to make it a little bit efficent.
-
-**Note**: This package is tested on XDC2460. In general, it uses serial communication so feel free to test it on your roboteq device. Please let me know it you do so, whether it works, any issues. Thank you.
-
-**End Doan Nguyen**
+- I only used the `driver.launch` for now. So `diff_odom` is kept as original. Later, I might make it works, but probably by modifying the `roboteq_controller_node`, not putting in a separated file to make it a little bit efficent. This package is tested on XDC2460. In general, it uses serial communication so feel free to test it on your roboteq device. Please let me know it you do so, whether it works, any issues. Thank you.
 
 **Credit**
 Full credit to Roboteq for creating this driver and Doan Nguyen for major improvement that he did for the driver. It was really helpful and I can't thank him enough for the amazing contribution. Thank you Doan Nguyen.
 
 **Note from Zharif**
-This repository is a modified version of Doan's where I used it for a Roboteq SBL2360T driver with a differential mobile robot configuration. Additional notes will be added from time to time especially guides and further explaination on the queries and how to use the driver.
+This repository is a modified version of Doan's where I used it for a Roboteq SBL2360T driver with a differential mobile robot configuration. I just changed some configuration, parameters and will provide extra walkthrough for newcomers (and future me) to understand the driver. Additional notes will be added from time to time especially guides and further explaination on the queries and how to use the driver. 
 
 # Installation Guide
 ```bash

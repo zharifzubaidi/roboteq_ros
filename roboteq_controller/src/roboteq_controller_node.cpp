@@ -180,14 +180,14 @@ void RoboteqDriver::cmdVelCallback(const geometry_msgs::Twist &msg){
 	}
 	else{
 		// motor speed (rpm)
-		int32_t right_rpm = right_speed *60.0 / wheel_circumference_;
-		int32_t left_rpm  = left_speed  *60.0 / wheel_circumference_;
+		int32_t right_rpm = 17*right_speed *60.0 / wheel_circumference_;
+		int32_t left_rpm  = 17*left_speed  *60.0 / wheel_circumference_;
 
 		ROS_INFO("[ROBOTEQ] left: %9d right: %9d", left_rpm, right_rpm);
 		cmd_str << "!S 1"
-				<< " " << left_rpm << "_"
+				<< " " << right_rpm << "_"
 				<< "!S 2"
-				<< " " << right_rpm << "_";
+				<< " " << left_rpm << "_";
 	}
 
 	ser_.write(cmd_str.str());

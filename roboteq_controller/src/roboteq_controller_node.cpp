@@ -180,6 +180,7 @@ void RoboteqDriver::cmdVelCallback(const geometry_msgs::Twist &msg){
 	}
 	else{
 		// motor speed (rpm)
+		// gear reduction = 17:1
 		int32_t right_rpm = 17*right_speed *60.0 / wheel_circumference_;
 		int32_t left_rpm  = 17*left_speed  *60.0 / wheel_circumference_;
 
